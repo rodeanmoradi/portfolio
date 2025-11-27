@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import * as THREE from 'three';
+import UofTLogo from './assets/logo.png';
 
 // --- Configuration ---
 const ACCENT_COLOR_HEX = 0xffffff; // White
@@ -444,11 +445,7 @@ const AboutView = () => (
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
             >
-                <img 
-                    src="assets/logo.png" 
-                    alt="University of Toronto" 
-                    className="w-24 h-auto md:w-32"
-                />
+                <img src={UofTLogo} alt="University of Toronto" className="w-24 h-auto md:w-32" />
             </motion.div>
 
             {/* Education Card */}
