@@ -438,14 +438,14 @@ const AboutView = () => (
         {/* Education Section */}
         <div className="flex flex-col md:flex-row items-center gap-6 w-full max-w-3xl mt-4">
             
-            {/* Logo with slight white background for visibility - EDITED: REMOVED PADDING, FIXED SIZE, COVER */}
+            {/* Logo container - EDITED: Added p-4 for padding, changed img to object-contain */}
             <motion.div 
-                className="bg-slate-200/90 w-32 h-32 md:w-40 md:h-40 rounded-xl shadow-lg shadow-blue-500/10 flex-shrink-0 overflow-hidden flex items-center justify-center"
+                className="bg-slate-200/90 p-4 w-32 h-32 md:w-40 md:h-40 rounded-xl shadow-lg shadow-blue-500/10 flex-shrink-0 overflow-hidden flex items-center justify-center"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
             >
-                <img src={UofTLogo} alt="University of Toronto" className="w-full h-full object-cover" />
+                <img src={UofTLogo} alt="University of Toronto" className="w-full h-full object-contain" />
             </motion.div>
 
             {/* Education Card */}
