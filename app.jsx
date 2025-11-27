@@ -456,8 +456,8 @@ const AboutView = () => (
                         <p className="text-blue-400 font-medium text-lg">University of Toronto</p>
                         <p className="text-gray-300">BASc in Mechanical Engineering</p>
                         <div className="mt-3 flex flex-wrap gap-2">
-                            <span className="text-xs bg-blue-500/10 text-blue-300 px-2 py-1 rounded border border-blue-500/20">Minor in Robotics</span>
-                            <span className="text-xs bg-blue-500/10 text-blue-300 px-2 py-1 rounded border border-blue-500/20">Minor in AI</span>
+                            <span className="text-xs bg-blue-500/10 text-blue-300 px-2 py-1 rounded border border-blue-500/20">Minor in Robotics & Mechatronics</span>
+                            <span className="text-xs bg-blue-500/10 text-blue-300 px-2 py-1 rounded border border-blue-500/20">Minor in AI Engineering</span>
                         </div>
                     </div>
                 </Card>
