@@ -370,7 +370,7 @@ const Lightbox = ({ isVisible, onClose }) => {
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
 
-            <h2 className="text-3xl font-bold text-white mb-6 border-b border-slate-700 pb-3">Self-Balancing Robot Demos</h2>
+            <h2 className="text-3xl font-bold text-white mb-6 border-b-2 border-slate-700 pb-3">Self-Balancing Robot Demos</h2>
             
             <div className="space-y-8">
               <div>
@@ -419,7 +419,7 @@ const HomeView = () => (
 
 const AboutView = () => (
     <SectionContainer>
-        <h2 className="text-3xl font-bold text-white mb-6 border-b border-blue-500/30 pb-4 inline-block">About Me</h2>
+        <h2 className="text-3xl font-bold text-white mb-6 border-b-2 border-blue-500/30 pb-4 inline-block">About Me</h2>
         <Card>
             <div className="space-y-4 text-gray-300 leading-relaxed text-lg">
                 <p>
@@ -471,7 +471,7 @@ const AboutView = () => (
 
 const ProjectsView = ({ onOpenLightbox }) => (
     <SectionContainer>
-        <h2 className="text-3xl font-bold text-white mb-6 border-b border-blue-500/30 pb-4 inline-block">Featured Projects</h2>
+        <h2 className="text-3xl font-bold text-white mb-6 border-b-2 border-blue-500/30 pb-4 inline-block">Featured Projects</h2>
         
         {/* Project 1 */}
         <Card delay={0.1}>
@@ -515,7 +515,7 @@ const ProjectsView = ({ onOpenLightbox }) => (
 
 const ExperienceView = () => (
     <SectionContainer>
-        <h2 className="text-3xl font-bold text-white mb-6 border-b border-blue-500/30 pb-4 inline-block">Experience</h2>
+        <h2 className="text-3xl font-bold text-white mb-6 border-b-2 border-blue-500/30 pb-4 inline-block">Experience</h2>
         
         <Card delay={0.1}>
             <h3 className="text-xl font-semibold text-white">Robotics Software Engineer | Driverless Controls</h3>
@@ -559,7 +559,7 @@ const App = () => {
       <ThreeBackground activeTab={activeTab} />
 
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 w-full bg-slate-950/80 backdrop-blur-md z-40 border-b border-white/5">
+      <nav className="fixed top-0 left-0 w-full bg-slate-950/80 backdrop-blur-md z-40 border-b-2 border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
                 <div 
