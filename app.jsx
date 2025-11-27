@@ -445,7 +445,7 @@ const AboutView = () => (
                 transition={{ duration: 0.5, delay: 0.2 }}
             >
                 <img 
-                    src="/assets/logo.png" 
+                    src="assets/logo.png" 
                     alt="University of Toronto" 
                     className="w-24 h-auto md:w-32"
                 />
