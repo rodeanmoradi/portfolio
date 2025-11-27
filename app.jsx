@@ -9,6 +9,20 @@ const NUM_NODES = 150;
 const CONNECTION_DISTANCE = 200; 
 const MOUSE_INTERACTION_RADIUS = 250; 
 
+// --- HELPER: Font Loader & Global Styles ---
+const FontLoader = () => (
+  <style>
+    {`
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+      
+      /* Force apply Inter to everything, with a fallback to system sans-serif */
+      * {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+      }
+    `}
+  </style>
+);
+
 // --- HELPER: Create Circular Texture ---
 const createCircleTexture = () => {
   const canvas = document.createElement('canvas');
@@ -38,7 +52,6 @@ const ThreeBackground = ({ activeTab }) => {
   const sectionRotationTarget = useRef({ x: 0, y: 0 });
 
   // Update target rotation when activeTab changes
-  // Using monotonic increasing Y values ensures consistent directionality
   useEffect(() => {
     switch(activeTab) {
         case 'home':
@@ -163,19 +176,14 @@ const ThreeBackground = ({ activeTab }) => {
     const _screenPos = new THREE.Vector3();
 
     const animate = () => {
-        // 1. Smoothly interpolate current section rotation towards the target (controlled by tabs)
         currentSectionRotationX += (sectionRotationTarget.current.x - currentSectionRotationX) * 0.02;
         currentSectionRotationY += (sectionRotationTarget.current.y - currentSectionRotationY) * 0.02;
 
-        // 2. Calculate Scroll Factor
         const scrollRotationFactor = scrollY * 0.001; 
 
-        // 3. Combine All Rotations
-        // Target = Mouse + Scroll + Section
         const finalTargetY = mouseRotationY + currentSectionRotationY;
         const finalTargetX = mouseRotationX + scrollRotationFactor + currentSectionRotationX;
 
-        // Smoothly interpolate the actual group rotation towards the combined target
         group.rotation.y += (finalTargetY - group.rotation.y) * 0.05;
         group.rotation.x += (finalTargetX - group.rotation.x) * 0.05;
 
@@ -287,7 +295,7 @@ const ThreeBackground = ({ activeTab }) => {
         linesMaterial.dispose();
         renderer.dispose();
     };
-  }, []); // Empty dependency array intentionally, we use refs for updates
+  }, []);
 
   return <div ref={containerRef} className="fixed inset-0 z-0" />;
 };
@@ -385,7 +393,6 @@ const Lightbox = ({ isVisible, onClose }) => {
 
 // --- Page Views ---
 
-// The dedicated Landing Page (Home)
 const HomeView = () => (
     <SectionContainer className="text-center">
         <motion.div 
@@ -410,7 +417,6 @@ const HomeView = () => (
     </SectionContainer>
 );
 
-// The separate About Page
 const AboutView = () => (
     <SectionContainer>
         <h2 className="text-3xl font-bold text-white mb-6 border-b border-blue-500/30 pb-4 inline-block">About Me</h2>
@@ -546,9 +552,10 @@ const App = () => {
   ];
 
   return (
-    <div style={{ fontFamily: '"Poppins", sans-serif' }} className="bg-slate-950 text-gray-200 min-h-screen overflow-hidden selection:bg-blue-500 selection:text-white flex flex-col">
+    <div className="bg-slate-950 text-gray-200 min-h-screen overflow-hidden selection:bg-blue-500 selection:text-white flex flex-col">
+      <FontLoader />
       
-      {/* 3D Background */}
+      {/* 3D Background - Passes Active Tab for Rotation */}
       <ThreeBackground activeTab={activeTab} />
 
       {/* Navigation Bar */}
