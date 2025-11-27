@@ -606,17 +606,11 @@ const App = () => {
         {/* Footer inside main content to scroll with it */}
         <footer className="text-center py-8 text-gray-500 text-xs">
             <div className="flex justify-center space-x-4 mb-4">
-                <a href="https://linkedin.com/in/rodean-moradi/" target="_blank" className="text-base text-gray-400 hover:text-blue-400 transition duration-300 flex items-center group bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700 hover:border-blue-500/50">
-                    <span className="mr-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                    </span>
-                    LinkedIn
+                <a href="https://linkedin.com/in/rodean-moradi/" target="_blank" rel="noopener noreferrer" className="text-base text-gray-400 hover:text-blue-400 transition duration-300 flex items-center justify-center group bg-slate-800/50 p-3 rounded-full border border-slate-700 hover:border-blue-500/50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
                 </a>
-                <a href="https://github.com/rodeanmoradi" target="_blank" className="text-base text-gray-400 hover:text-blue-400 transition duration-300 flex items-center group bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700 hover:border-blue-500/50">
-                    <span className="mr-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.37-1-3.3.26-.52.26-1.42 0-2.05 0 0-1.5-.5-5 1.5-1.2-.35-2.4-.35-3.6 0-3.5-2-5-1.5-5-1.5-.27.63-.27 1.53 0 2.05-.73.93-1.08 2.05-1 3.3 0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.25.86-.55 2.51-1 3.5v1"/></svg>
-                    </span>
-                    GitHub
+                <a href="https://github.com/rodeanmoradi" target="_blank" rel="noopener noreferrer" className="text-base text-gray-400 hover:text-blue-400 transition duration-300 flex items-center justify-center group bg-slate-800/50 p-3 rounded-full border border-slate-700 hover:border-blue-500/50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.37-1-3.3.26-.52.26-1.42 0-2.05 0 0-1.5-.5-5 1.5-1.2-.35-2.4-.35-3.6 0-3.5-2-5-1.5-5-1.5-.27.63-.27 1.53 0 2.05-.73.93-1.08 2.05-1 3.3 0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.25.86-.55 2.51-1 3.5v1"/></svg>
                 </a>
             </div>
             <p>Rodean Moradi | rodean.moradi@mail.utoronto.ca</p>
