@@ -399,7 +399,7 @@ const AboutView = () => (
         <h2 className="text-3xl font-bold text-white mb-6 border-b-2 border-blue-500/30 pb-4 inline-block">About Me</h2>
         <Card>
             <div className="space-y-4 text-gray-300 leading-relaxed text-lg">
-                <p>Hello! I'm Rodean, a Mechanical Engineering student at the University of Toronto with a deep passion for robotics and autonomous systems.</p>
+                <p>I'm a Mechanical Engineering student at the University of Toronto with a passion for robotics and autonomous systems.</p>
                 <p>Eager to bridge the gap between hardware and software, I specialize in controls, computer vision, and machine learning. My interest lies in building intelligent systems that can solve cool problems in the physical world.</p>
                 <p>When I'm not coding, you can find me lifting, grappling, or watching movies.</p>
             </div>
@@ -418,7 +418,7 @@ const AboutView = () => (
                     <div className="flex flex-col h-full justify-center">
                         <h3 className="text-xl font-semibold text-white mb-1">Education</h3>
                         <p className="text-blue-400 font-medium text-lg">University of Toronto</p>
-                        <p className="text-gray-300">BASc in Mechanical Engineering</p>
+                        <p className="text-gray-300">BASc in Mechanical Engineering | 2024 - 2029</p>
                         <div className="mt-3 flex flex-wrap gap-2">
                             <span className="text-xs bg-blue-500/10 text-blue-300 px-2 py-1 rounded border border-blue-500/20">Minor in Robotics & Mechatronics</span>
                             <span className="text-xs bg-blue-500/10 text-blue-300 px-2 py-1 rounded border border-blue-500/20">Minor in AI Engineering</span>
